@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="CSS/index.css" rel="stylesheet">
+</head>
+<body>
+  <div class="title">
+    <h1>float</h1>
+    <h3>- 레이아웃 만들기</h3>
+    <h5 style="text-align: right">23년 5월 1일 월요일</h5>
+  </div>
+  
+  <!--wrapper박스: 전체 감싸는 용-->
+  <div class="container"> 
+    <div class="header">
+      <p>float layout</p>
+    </div>
+    <div class="float-left">
+      <p>float: left로 박스요소 띄워서 출력</p>
+    </div>
+    <div class="float-content">
+      <p>float: left or right로 박스요소 띄워서 출력</p>
+    </div>
+    <div class="float-footer">
+      <p>float으로 박스요소가 떠있기 때문에 다음 박스요소가 float 아래에 삽입됨</br>
+        -> clear: both를 통해 float상쇄 후 다음 공간에 박스요소 삽입</p>
+    </div>
+  </div>
+  <div class="container"> 
+    <div class="header">
+      <p>inline layout</p>
+    </div>
+    <div class="inline-left">
+      <p>display: inline-block 사용 시 코드상의 공백도 인식해버림</p>
+    </div><!--
+  --><div class="inline-content">
+      <p><해결방법></br>
+        1. 주석처리로 공백 제거하거나</br>
+        2. style: font-size: 0px 을 적용해야 함</br>
+        3. 💛 vertical-align: top
+      </p>
+    </div>
+    <div class="inline-footer"></div>
+  </div>
+</body>
+</html>

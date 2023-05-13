@@ -13,13 +13,13 @@
   padding: 0px 40px 0px 40px;
   border-radius: 10px;
   border: 1px solid lightslategray;
-  background-color: lightsteelblue;
+  background-color: rgb(207, 223, 244);
 }
 
 .container {
   margin: 40px;
   width: auto;
-
+  height: auto;
 }
 
 .header {
@@ -69,4 +69,19 @@
   height: 50px;
   background-color: #f7d086;
   
+}
+
+.board-layout{
+  list-style: outside;
+
+}
+
+.board-title-left{
+  width: 80%;
+  
+}
+
+.board-title-profile{
+  width: 100%;
+
 }

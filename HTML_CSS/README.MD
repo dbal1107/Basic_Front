@@ -17,7 +17,7 @@
       <li>셀렉터를 이용해 CSS 코드 양 줄이기</li>
       <li>배경 이쁘게 넣는 스킬들 & margin collapse</li>
       <li>position과 좌표 레이아웃 만들기</li>
-      <li>position 숙제 & 반응형 width & box-sizing
+      <li>position 숙제 & 반응형 width & box-sizing</br>
         <img src="img/homework/230514position.png" style="width: 50%">
       </li>
       <li>form & input</li>

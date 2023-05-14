@@ -17,10 +17,12 @@
       <li>셀렉터를 이용해 CSS 코드 양 줄이기</li>
       <li>배경 이쁘게 넣는 스킬들 & margin collapse</li>
       <li>position과 좌표 레이아웃 만들기</li>
-      <li>position 숙제 & 반응형 width & box-sizing</li>
+      <li>position 숙제 & 반응형 width & box-sizing
+        <img src="img/homework/230514position.png" style="height: 50%">
+      </li>
       <li>form & input</li>
       <li>form & input 숙제 : Contact Us 섹션 만들기 - 230514</br>
-        <img src="img/homework/230514contact.png">
+        <img src="img/homework/230514contact.png" style="width: 50%">
       </li>
       <li>쓸데 많은 Table 레이아웃과 vertical-align속성</li>
       <li>Table 레이아웃 숙제 : Cart 페이지 만들기</li>

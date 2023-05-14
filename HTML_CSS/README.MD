@@ -18,7 +18,7 @@
       <li>배경 이쁘게 넣는 스킬들 & margin collapse</li>
       <li>position과 좌표 레이아웃 만들기</li>
       <li>position 숙제 & 반응형 width & box-sizing
-        <img src="img/homework/230514position.png" style="height: 50%">
+        <img src="img/homework/230514position.png" style="width: 50%">
       </li>
       <li>form & input</li>
       <li>form & input 숙제 : Contact Us 섹션 만들기 - 230514</br>

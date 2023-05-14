@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/selector.css" rel="stylesheet">
+</head>
+<body>
+  <div class="back">
+    <form class="contact-box">
+      <div>
+        <h1>contact us</h1>
+      </div>
+
+      <div class="box">
+        <p>Your Email</p>
+        <input class="email-box" type="email" placeholder="email@example.com">
+      </div>
+
+      <div class="float-box">
+        <p>First name</p>
+        <input type="text">
+      </div>
+      <div class="float-box">
+        <p>Last name</p>
+        <input type="text">
+      </div>
+
+      <div class="box" style="clear: both;">
+        <p>Message</p>
+        <textarea class="text-box"></textarea> 
+      </div>
+      
+      <div class="box">
+        <div class="float-box">
+          <input id="sub" type="checkbox">
+          <label for="sub">Subscribe</label>
+        </div>
+        <div class="float-box">
+          <button class="send-btn">SEND</button>
+        </div>
+      </div>
+      
+      <div style="clear: both;"></div>
+    </form>
+  </div>
+  <div>
+    <h2>< 의문 ></h2>
+    <li>왜 자꾸만 부모 width를 벗어나나 하하하 -> box-sizing: border-box 로 해결!!</li>
+    <li>어떻게 해야 깔끔하게 float 사이를 벌리나 -> 전체 박스에 padding  통일시키기</li>
+    <li>수직 가운데 정렬 어떻게 하나 -> 지금은 margin -값 주기...</li>
+  </div>
+  <div>
+    <h2 style="color: palevioletred;">[ css, html본문 나름 깔끔한 듯!! 잘했다~ ]</h2>
+  </div>
+</body>
+</html>

@@ -25,7 +25,8 @@
         <img src="img/homework/230514contact.png" style="width: 50%">
       </li>
       <li>쓸데 많은 Table 레이아웃과 vertical-align속성</li>
-      <li>Table 레이아웃 숙제 : Cart 페이지 만들기</li>
+      <li>Table 레이아웃 숙제 : Cart 페이지 만들기 - 230521</li>
+        <img src="img/homework/230514contact.png" style="width: 50%">
       <li>pseudo-class로 인터랙티브 버튼 만들기</li>
       <li>코드양이 줄어드는 class 작명법 (OOCSS, BEM)</li>
     </ol>

@@ -138,3 +138,39 @@ td > div > div {
   height: 50px;
   width: 250px;
 }
+
+.btn {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: chocolate;
+}
+
+.btn:focus {
+  background-color: grey;
+}
+
+.btn:active {
+  background-color: brown;
+}
+
+.input-test:focus {
+  border: 2px solid red;
+}
+
+.custom-link {
+  text-decoration: none;
+}
+
+.custom-link:link {
+  color: white;
+}
+
+.custom-link:visited {
+  color: palevioletred;
+}

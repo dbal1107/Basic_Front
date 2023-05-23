@@ -1,0 +1,23 @@
+.alert-box {
+  width: 555px;
+  background-color: skyblue;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  border-radius: 5px;
+  display: none; /* 평소에 숨김 */
+}
+
+.alert-box-more {
+  width: 555px;
+  background-color: skyblue;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  border-radius: 5px;
+  display: none; /* 평소에 숨김 */
+}
+
+.close-btn {
+  margin: 10px 0px 10px 500px;
+}

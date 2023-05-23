@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alert</title>
+  <link href="css/alert.css" rel="stylesheet">
+</head>
+<body>
+  <h1 id="title">1. alert 박스 만들기</h1>
+  <h1 id="hi">JS 초보입니다.</h1>
+  <h3>2. UI만드는 step</h1>
+  <ol>
+    <li>HTML/CSS로 미리 디자인</li>
+    <li>필요할 때 보여달라고 코드 짬</li>
+    <li>조작할 html 하단에 작성</li>
+  </ol>
+  <div class="alert-box" id="alert">
+    <a>button onclick="document.getElementById('alert').style.display = 'block';">버튼 /button></a>
+    <div class="close-btn">
+      <button onclick="closeBtn()">닫기</button>
+    </div>
+  </div>
+  <button onclick="document.getElementById('alert').style.display = 'block';">버튼</button>
+
+  <h3>3. 더러운 onclick -> 깔끔한 function</h3>
+  <ol>
+    <li>긴코드 축약</li>
+    <li>재사용가능</li>
+  </ol>
+
+  <h3>4. function 오류 디버깅</h3>
+  <ol>
+    <li>개발자모드 console 확인</li>
+    <li>셀렉터 오타: null 발생</li>
+  </ol>
+
+  <h3>5. function 파라미터(구멍) 뚫기</h3>
+  <ol>
+    <li>유연성 늘리기</li>
+    <li>가변성 좋다</li>
+  </ol>
+
+  <div class="alert-box-more" id="alert-more">
+    <a>    function closeBtnMore(more){</br>
+      document.getElementById('alert-more').style.display = more;</br>
+    }</a>
+    <div class="close-btn">
+      <button onclick="closeBtnMore('none');">닫기</button>
+    </div>
+  </div>
+  <button onclick="closeBtnMore('block');">버튼</button>
+
+  <h2>숙제</h2>
+  <p>버튼 누르면 아이디 입력, 비번 입력 알리기</p>
+
+  <script>
+    document.getElementById('title').innerHTML = '1. 안녕';
+    //html문서 의 요소를얻어주세요id에의해서 그거의내부html을 안녕으로바꿔주세요.
+    document.getElementById('hi').innerHTML = 'JS 시작!!';
+    document.querySelector('h1').style.fontSize = "16px";
+
+    function closeBtn(){
+      document.getElementById('alert').style.display = 'none';
+    }
+
+    function closeBtnMore(more){
+      document.getElementById('alert-more').style.display = more;
+    }
+
+
+  </script>
+
+</body>
+</html>

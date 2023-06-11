@@ -6,6 +6,7 @@
   color: white;
   border-radius: 5px;
   display: none; /* 평소에 숨김 */
+  /* display: block; 고정 */
 }
 
 .alert-box-more {
@@ -20,4 +21,18 @@
 
 .close-btn {
   margin: 10px 0px 10px 500px;
+}
+
+.login-box {
+  width: 555px;
+  background-color: skyblue;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  border-radius: 5px;
+  display: none; /* 평소에 숨김 */
+}
+
+.login-btn {
+  float: left;
 }

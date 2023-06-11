@@ -15,14 +15,15 @@
     <li>HTML/CSS로 미리 디자인</li>
     <li>필요할 때 보여달라고 코드 짬</li>
     <li>조작할 html 하단에 작성</li>
+    <li>복잡하면 한글로 흐름 짜고 코드로 옮겨보기</li>
   </ol>
   <div class="alert-box" id="alert">
     <a>button onclick="document.getElementById('alert').style.display = 'block';">버튼 /button></a>
     <div class="close-btn">
-      <button onclick="closeBtn()">닫기</button>
+      <button onclick="closeBtn()" type="button">닫기</button>
     </div>
   </div>
-  <button onclick="document.getElementById('alert').style.display = 'block';">버튼</button>
+  <button onclick="document.getElementById('alert').style.display = 'block';" type="button">버튼</button>
 
   <h3>3. 더러운 onclick -> 깔끔한 function</h3>
   <ol>
@@ -41,34 +42,71 @@
     <li>유연성 늘리기</li>
     <li>가변성 좋다</li>
   </ol>
-
+  
   <div class="alert-box-more" id="alert-more">
     <a>    function closeBtnMore(more){</br>
       document.getElementById('alert-more').style.display = more;</br>
     }</a>
     <div class="close-btn">
-      <button onclick="closeBtnMore('none');">닫기</button>
+      <button onclick="closeBtnMore('alert-more', 'none');" type="button">닫기</button>
     </div>
   </div>
-  <button onclick="closeBtnMore('block');">버튼</button>
-
+  <button onclick="closeBtnMore('alert-more', 'block');" type="button">버튼</button>
+  
   <h2>숙제</h2>
   <p>버튼 누르면 아이디 입력, 비번 입력 알리기</p>
+  <div class="login-box" id="login">
+    <p>정보 입력 알림</p>
+    <div class="close-btn">
+      <button onclick="closeBtnMore('login', 'none');" type="button">닫기</button>
+    </div>
+  </div>
+  <button onclick="loginBtnAlert('id');" class="login-btn" type="button">id</button>
+  <button id="loginBtnAlert" class="login-btn" type="button">pw</button>
+  
+  <div style="clear: both; margin: 50px 0px 50px 0px;">
+    <p>숙제 너무 어려웠다.....</p>
+  </div>
+  
+  <h3>6. addEventListener()</h3>
+  <ol>
+    <li>onclick 등 이벤트를 깔끔하게 정리!</li>
+    <li>tag(button)에 id를 부여하여 이용</li>
+    <li>document.getElementById('close')의 button을 click하면</br>function의 함수를 실행한다.</li>
+  </ol>
 
   <script>
     document.getElementById('title').innerHTML = '1. 안녕';
-    //html문서 의 요소를얻어주세요id에의해서 그거의내부html을 안녕으로바꿔주세요.
+    //html문서 의 요소를얻어주세요id에의해서 
+    //1.그거의내부html을 안녕으로바꿔주세요.
     document.getElementById('hi').innerHTML = 'JS 시작!!';
+    // querySelector: 최상위 한가지만 가져옴.
+    // querySelectorAll: 전체를 가져옴. 인덱싱으로 선택.
+      // -(CSS: tag, .클래스, #id, ...)
     document.querySelector('h1').style.fontSize = "16px";
+    //2.가져온 요소의 바꾸고 싶은 것들을 뒤에 추가
 
-    function closeBtn(){
+    function closeBtn(){ // 알림창 닫기 고정
       document.getElementById('alert').style.display = 'none';
     }
 
-    function closeBtnMore(more){
-      document.getElementById('alert-more').style.display = more;
+    function closeBtnMore(id, more){ // 파라미터로 알림창 가변 가능
+      document.getElementById(id).style.display = more;
     }
 
+    function loginBtnAlert(type){
+      // id로 찾기: id의 중복을 허용하지 않는다.
+      // 사용할 구간들 확인 제대로 하기. 
+      document.getElementById('login').style.display = 'block';
+      document.getElementById('login').querySelector('p').innerHTML = type + "을(를) 입력하세요.";
+      // class로 찾기: class는 중복을 허용하기 때문에 인덱스로 위치 찾는다.
+        // document.getElementsByClassName('title')[0].innerHTML = '아이디를 입력하세요.'
+    }
+
+    document.getElementById('loginBtnAlert').addEventListener('click', function(){
+      document.getElementById('login').style.display = 'block';
+      document.getElementById('login').querySelector('p').innerHTML =  document.getElementById('loginBtnAlert').innerHTML + "를 입력하세요.";
+    });
 
   </script>
 

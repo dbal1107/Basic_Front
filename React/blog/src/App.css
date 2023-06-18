@@ -54,3 +54,12 @@ div {
   padding-left : 20px;
   border-bottom : 1px solid grey;
 }
+h3 {
+  text-align: center;
+}
+.detail-modal {
+  margin: 30px;
+  padding: 20px;
+  text-align: left;
+  background-color: gainsboro;
+}
